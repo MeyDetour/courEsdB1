@@ -1,0 +1,37 @@
+h1{
+    color: saddlebrown;
+}
+
+.def{
+    border: red 4px solid;
+}
+
+.caverne{
+    background-image: url("Images/lacaverne.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 422px;
+    height: 308px;
+
+}
+.laCaverne{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    border-bottom: black 2px solid;
+    border-top: black 2px solid;
+
+}
+.texteCaverne{
+    width: 50%;
+}
+
+.listeMatiere {
+    padding: 50px;
+    margin: 50px;
+    width: 100%;
+    background-color: #c8ffdd;
+    border-radius: 50px;
+
+}
