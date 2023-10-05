@@ -31,7 +31,16 @@ h1{
     padding: 50px;
     margin: 50px;
     width: 100%;
-    background-color: #c8ffdd;
+    background-color: #f0ad4e;
     border-radius: 50px;
 
+}
+.mey{
+    background-image: url("Images/mey.jpg");
+    width: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 200px;
 }
