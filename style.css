@@ -13,7 +13,10 @@ h2{
 .def{
     border: red 4px solid;
 }
-
+.logo{
+    width: 40px;
+    height: 40px;
+}
 .caverne{
     background-image: url("Images/lacaverne.png");
     background-size: cover;
