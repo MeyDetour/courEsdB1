@@ -37,7 +37,8 @@ h5{
     margin: 15px;
     border-top: aqua 5px solid;
     border-bottom: aqua 5px solid;
-
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 .texteCaverne{
     width: 50%;
