@@ -1,6 +1,7 @@
 body{
     margin: 4%;
-    font-size: 25px;
+    font-size: 1.5em;
+    overflow-x: hidden;
 }
 h1{
     color: #f0ad4e;
@@ -26,11 +27,10 @@ h5{
 }
 .caverne{
     background-image: url("Images/lacaverne.png");
-    background-size: cover;
+    height: 350px;
+    background-size: contain;
     background-repeat: no-repeat;
-    width: 422px;
-    height: 308px;
-
+    width: 628px;
 }
 .refImage{
     padding : 40px;
@@ -55,9 +55,40 @@ h5{
 .mey{
     background-image: url("Images/mey.jpg");
     width: 200px;
+    height: 200px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
-    height: 200px;
+}
+@media only screen and (max-width: 786px) {
+    .mey {
+        height: 150px;
+        width: 150px;
+    }
+
+    .listeMatiere {
+        display: flex;
+        width: 95%;
+        margin: 10px;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .dropdown {
+        margin: 10px;
+    }
+
+    .caverne {
+        height: 200px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+
+
+    }
+
+    body {
+        font-size: 1em;
+    }
 }
