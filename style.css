@@ -1,97 +1,155 @@
-body{
-    margin: 4%;
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&family=Ubuntu&display=swap');
+
+
+body {
     font-size: 1.5em;
     overflow-x: hidden;
-}
-h1{
-    color: #f0ad4e;
-}
-h2{
-    padding-top: 80px;
-    color: saddlebrown;
-    padding-bottom: 40px;
-}
 
-h5{
-    padding-top:10px;
-    padding-bottom: 10px;
 }
-.def{
-    border: red 4px solid;
-    padding : 40px;
-    margin: 15px;
-}
-.logo{
-    width: 40px;
-    height: 40px;
-}
-.caverne{
-    background-image: url("Images/lacaverne.png");
-    height: 350px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 628px;
-}
-.refImage{
-    padding : 40px;
-    margin: 15px;
-    border-top: aqua 5px solid;
-    border-bottom: aqua 5px solid;
-    margin-bottom: 50px;
-    margin-top: 50px;
-}
-.texteCaverne{
-    width: 50%;
-}
+a{
+    text-decoration: none;
+    color: white;
 
-.listeMatiere {
-    padding: 50px;
-    margin: 50px;
+}
+p{
+    white-space: pre-wrap;
+
+}
+.bg-darkviolet {
+    background-color: #220222;
+    position: fixed;
+    display: flex;
     width: 100%;
-    background-color: #f0ad4e;
-    border-radius: 50px;
-
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
-.mey{
+
+.profil-space {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    width: 80%;
+    margin: 5%;
+}
+
+.mey {
     background-image: url("Images/mey.jpg");
-    width: 200px;
-    height: 200px;
-    background-repeat: no-repeat;
+    border-radius: 50%;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
+    width: 120px;
+    height: 120px;
+    filter: drop-shadow(0px 0px 1em #7a00ff);
+    box-shadow: 0px 0px 1em grey;
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ############################################ */
+
+
+.matiere-space {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 12%;
+    width: 77%;
+    height: 24%;
+    color: white;
+    text-shadow: 0px 0px 2em white;
 
 }
-@media only screen and (max-width: 786px) {
-    .mey {
-        height: 150px;
-        width: 150px;
-    }
+.matiere{
+    margin-bottom: 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.fd-ic,.iconept{
+    background-color: #b174ba;
+    box-shadow: 0px 0px 1em black;
+    filter: drop-shadow(0px 0px 0.2em mistyrose) brightness(1.2);
+    font-size: 1.5em;
+}
 
-    .listeMatiere {
+.fd-ic {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+border-radius: 60px;
+   padding: 10px 20px 10px 20px ;
+width: 100%;
+    margin-bottom: 12%;
+
+}
+.iconept{
+    border-radius: 20px;
+    width: 1em;
+    height: 1.5em;
+    margin-right: 6%;
+
+}
+
+
+.ic-philosophie {
+    width: 50px;
+    height: 50px;
+    background-image: url('Images/philosophie.png');
+    background-size: cover;
+}
+
+
+.lien {
+
+}
+
+.matiere>div>span {
+    font-family: 'Edu Tas Beginner';
+    font-size: 0.8em;
+    white-space: unset;
+}
+
+.matiere-space>div>li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 6%;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .navbar {
+        background-color: #271441;
+        border-radius: 20px;
+        width: 90%;
+        height: 95%;
+        filter: drop-shadow(0px 0px 1em #7a00ff);
+        box-shadow: 0px 0px 1em grey;
         display: flex;
-        width: 95%;
-        margin: 10px;
-        justify-content: space-around;
         flex-direction: column;
+        justify-content: start;
+        position: fixed;
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
 
-    .dropdown {
-        margin: 10px;
-    }
-
-    .caverne {
-        height: 200px;
-        background-size: contain;
-        background-repeat: no-repeat;
+    .bouton-matiere {
         width: 100%;
-
-
-    }
-
-    body {
-        font-size: 1em;
-    }
-    h5{
-        font-size: 1em;
+        height: 100%;
+        background-color: transparent;
+        border: 0;
     }
 }
