@@ -1,50 +1,112 @@
-body{
-    margin: 4%;
+body {
+    margin: 2%;
     font-size: 1.5em;
     overflow-x: hidden;
 }
-h1{
+a{
+    text-decoration: none;
+    color: white;
+}
+.navbarCour {
+    margin-top: 10px;
+    width: 100%;
+    height: 85px;
+    background-color: #3e0e80;
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 1em #7a00ff);
+    box-shadow: 0px 0px 1em grey;
+
+    position: relative;
+}
+
+.scroll-space {
+    width: 88%;
+    height: 100%;
+    display: flex;
+    padding-left: 15px;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: clip;
+    overflow-y: hidden;
+    z-index: 1;
+}
+
+
+.iconeHome {
+    position: absolute;
+    background-color: #2d0567;
+    border-radius: 0px 20px 20px 0px;
+    height: 100%;
+    width: 12%;
+    right: 0%;
+    top: 0%;
+    font-size: 2.5em;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.iconeHome > i {
+    color: white;
+}
+
+
+/* #################### FIN DE NAVBAR ####################*/
+
+h1 {
     color: #f0ad4e;
 }
-h2{
+
+h2 {
     padding-top: 80px;
     color: saddlebrown;
     padding-bottom: 40px;
 }
 
-h5{
-    padding-top:10px;
+h5 {
+    padding-top: 10px;
     padding-bottom: 10px;
 }
-.def{
+
+.def {
     border: red 4px solid;
-    padding : 40px;
+    padding: 40px;
     margin: 15px;
 }
-.logo{
+
+.logo {
     width: 40px;
     height: 40px;
 }
-.caverne{
+
+.caverne {
     background-image: url("Images/lacaverne.png");
     height: 350px;
     background-size: contain;
     background-repeat: no-repeat;
     width: 628px;
 }
-.refImage{
-    padding : 40px;
+
+.refImage {
+    padding: 40px;
     margin: 15px;
     border-top: aqua 5px solid;
     border-bottom: aqua 5px solid;
     margin-bottom: 50px;
     margin-top: 50px;
 }
-.texteCaverne{
+
+.texteCaverne {
     width: 50%;
 }
 
 @media only screen and (max-width: 786px) {
+
+    .navbarCour {
+        margin-top: 29px;}
     .mey {
         height: 150px;
         width: 150px;
@@ -63,7 +125,8 @@ h5{
     body {
         font-size: 1em;
     }
-    h5{
+
+    h5 {
         font-size: 1em;
     }
 }
