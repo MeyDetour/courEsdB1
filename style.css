@@ -6,22 +6,26 @@ body {
     overflow-x: hidden;
 
 }
-.container-fond{
+
+.container-fond {
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: repeating-radial-gradient(  #e2d1d1 50%, #e7d2d2ee 70%,#f5c7a1 95%);   background-size: 30px 30px;
+    background-image: repeating-radial-gradient(#e2d1d1 50%, #e7d2d2ee 70%, #f5c7a1 95%);
+    background-size: 30px 30px;
     background-position: 0 0, 15px 15px;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
     font-size: .8em;
 
 }
-p{
+
+p {
 
     white-space: normal;
     margin: 0;
@@ -29,7 +33,7 @@ p{
 
 }
 
-.cartesSpace{
+.cartesSpace {
     width: 100%;
     /* height: 100%; */
     justify-content: space-around;
@@ -37,6 +41,7 @@ p{
     flex-direction: row;
     align-items: center;
 }
+
 .navbar {
     background-color: #ecb4a0;
     border-radius: 20px;
@@ -51,11 +56,12 @@ p{
 }
 
 
-li{
-display: flex;
+li {
+    display: flex;
     flex-direction: row;
     align-items: center;
 }
+
 .profil-space {
     display: flex;
     flex-direction: row;
@@ -63,7 +69,7 @@ display: flex;
     justify-content: start;
     color: white;
     width: 80%;
-    margin: 1%;
+    margin: 5%;
 }
 
 .mey {
@@ -89,45 +95,7 @@ display: flex;
 /* ############################################ */
 
 
-.matiere-space {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    width: 77%;
-    height: 24%;
-    color: white;
-    text-shadow: 0px 0px 2em white;
-
-}
-.matiere{
-    width: 27%;
-
-    margin-bottom: 12%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.fd-ic,.iconept{
-    background-color: #b174ba;
-    box-shadow: 0px 0px 1em black;
-    filter: drop-shadow(0px 0px 0.2em mistyrose) brightness(1.2);
-    font-size: 1.5em;
-}
-
-.fd-ic {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
-    border-radius: 60px;
-    padding: 10px 20px 10px 20px ;
-    width: 100%;
-    margin-bottom: 12%;
-
-}
-.iconept{
+.iconept {
     border-radius: 20px;
     width: 1em;
     height: 1.5em;
@@ -144,13 +112,13 @@ display: flex;
 }
 
 
-.matiere>div>span {
+.matiere > div > span {
     font-family: 'Edu Tas Beginner';
     font-size: 0.8em;
     white-space: unset;
 }
 
-.matiere-space>div>li {
+.matiere-space > div > li {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -160,33 +128,14 @@ display: flex;
 }
 
 
-@media only screen and (max-width: 1300px) {
-
-    .profil-space {
-        justify-content: space-between;
-    }
-
-
-    .matiere-space {
-
-        flex-direction: column;
-        margin-top: 12%;
-
-    }
-    .matiere{
-        width: 100%;
-    }
-
-
-}
-
 /* ############################################ */
-.liste-chap{
+.liste-chap {
     display: flex;
     flex-direction: row;
     align-items: center;
 
 }
+
 .checkbox-wrapper * {
     -webkit-tap-highlight-color: transparent;
     outline: none;
@@ -304,7 +253,7 @@ display: flex;
 .flip-card {
     background-color: transparent;
     width: 386px;
-    height: 490px;
+    height: 398px;
     perspective: 1000px;
     font-family: sans-serif;
 }
@@ -330,7 +279,7 @@ display: flex;
 }
 
 .flip-card-front, .flip-card-back {
-    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -357,4 +306,72 @@ display: flex;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 1080px) {
+
+
+    .flip-card {
+        width: 259px;
+        height: 380px;
+    }
+
+    .matiere-space {
+
+        flex-direction: column;
+        margin-top: 12%;
+
+    }
+
+
+    body {
+        font-size: 1em;
+        overflow-x: hidden;
+
+
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 740px) {
+
+    .profil-space {
+        justify-content: space-between;
+    }
+
+    .cartesSpace {
+        flex-direction: column;
+
+    }
+
+    .navbar {
+        overflow-y: scroll;
+    }
+    .flip-card {
+        width: 259px;
+        height: 380px;
+    }
+
+    .matiere-space {
+
+        flex-direction: column;
+        margin-top: 12%;
+
+    }
+
+    .matiere {
+        width: 100%;
+    }
+    body {
+        font-size: 1em;
+        overflow-x: hidden;
+
+
+    }
+
+
+
 }
